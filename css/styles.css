@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-size: 50px;
+}
+
+#head {
+    background-color: purple;
+    padding: 20px;
+    text-align: center;
+}
+
+#body {
+    background-color: rgb(53, 53, 53);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    float: left;
+    width: 50%;
+}
+
+#body2 {
+    background-color: rgb(53, 53, 53);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    float:right;
+    width: 50%;
+}
+
+p {
+    margin: 50px;
+}
+
+#t {
+    color: red;
+   
+}
