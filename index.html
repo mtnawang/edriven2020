@@ -1,21 +1,87 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div id="head">
-        <h1>WELCOME TO MAR'S BASIC WEBPAGE</h1>
-    </div>
-    <div id="body">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia quod non accusamus hakdog aspernatur temporibus ratione et ad perferendis, error at magnam molestias doloribus odit repellendus pariatur, similique esse velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusantium quam voluptatem vitae repellat odit dignissimos cupiditate assumenda delectus molestias possimus voluptatibus, corrupti explicabo totam quibusdam cumque sequi distinctio omnis?</p>
-    </div>
-    <div id="body2">
-        <p>Lorem ipsum dolor sit amet consectetur secretus messegus adipisicing elit. Delectus hinzugefuegt fuga a ea, molestias mashamang makipagawayus sunt, laborum vegaun tenetur totam iure ich liebe adobo sed distinctio ullam ther ar no esturregs hier obcaecati hehe illum omnis, ut calisud esa calculus matai naquh vel possimus! Nulla, quae quos.</p>
-    </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Calendar Generator</title>
+        <style>
+            tr td:nth-child(1) {
+                background: rgb(255, 186, 186);
+            }
 
-</body>
-<script type="text/javascript" src="js/my.js"></script>
+            td {
+                border: 2px solid black; 
+                height: 70px;
+                width: 70px;
+                size: 40px;
+            }
+
+        </style>
+    </head>
+    <body>     
+        <h1 id="errorMSG"></h1>
+        <table style="font-size: 20px; font-weight: 100; text-align: center;">
+            <thead>
+                <tr>
+                    <th style="font-size: 30px; text-align: center; font-weight:bold; border: black 2px solid; height: 40px;" colspan="7" id="month"></th>
+                </tr>
+                <tr>
+                    <th style="border: black 2px solid; background-color: red; color: white; padding: 0 10px 0 10px;">Sun</th>
+                    <th style="border: black 2px solid; padding: 0 10px 0 10px;">Mon</th>
+                    <th style="border: black 2px solid; padding: 0 10px 0 10px;">Tue</th>
+                    <th style="border: black 2px solid; padding: 0 10px 0 10px;">Wed</th>
+                    <th style="border: black 2px solid; padding: 0 10px 0 10px;">Thur</th>
+                    <th style="border: black 2px solid; padding: 0 10px 0 10px;">Fri</th>
+                    <th style="border: black 2px solid; padding: 0 10px 0 10px;">Sat</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+            </tbody>
+            </table>
+        <script>
+            var monthNum = parseInt(prompt('Month (1-12)'));
+            var startDay = parseInt(prompt('Start day (1-7)'));
+
+            if ((monthNum <= 0 || monthNum > 12 ) || (startDay <= 0 || startDay > 7)) {
+                document.getElementById("errorMSG").innerHTML = "Invalid Input";
+            } 
+            
+            else {
+                var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+                var table = document.getElementById("tableData");
+                var month = document.getElementById("month");
+                var limit = monthDays[monthNum-1];
+                var start = startDay;
+                var days = 0;
+                var additional = "";
+                
+                month.innerHTML = monthNames[monthNum-1];
+    
+                for (var a = 0; a < 6; a++) {  
+                    var rows = document.createElement("tr");
+
+                    for (var i = 0; i < 7; i++) {
+                        if (days >= limit)
+                            continue;
+
+                        if (start != 0)
+                            start--;
+
+                        var cell = document.createElement("td");
+
+                        if (start == 0) {
+                            days++;
+                            cell.innerHTML = days;
+                                     
+                        }      
+
+                        rows.appendChild(cell);             
+                        table.appendChild(rows);  
+                    }                      
+                }                  
+            }
+        </script>
+    </body>
 </html>
