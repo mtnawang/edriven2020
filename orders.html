@@ -1,0 +1,579 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+    <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.css">
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" 
+        crossorigin="anonymous">
+    </script>
+    <style>
+        #image {          
+            height: 35px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: -6px;
+        }
+    </style>  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/index.html"><img id="image" src="img/LogoOnly.png"> NÀWÀNG 那王 </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse mr-auto my-2 my-lg-0" id="navbarColor01">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactmodal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        &nbsp Contact Us
+                    </a>
+                </li>         
+            </ul>
+        </div>
+    </nav>
+
+    <!--Contact Modal-->
+    <div class="modal fade" id="contactmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg> &nbsp Contact Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body justify-content-center text-center">
+                    <div class="container">
+                        <img class="card-img-top" src="img/Casual.jpg" alt="Card image cap" style="border-radius: 50%; width: 300px; height: 300px"> 
+                        
+                    </div>
+                    <div class="container mt-3">
+                        <h3><b>Moammar T. Nawang</b></h3>
+                        <h5>Ateneo de Davao University</h5>
+                        <h5>mtnawang@addu.edu.ph</h5>
+                        <h5>09983416134</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View Order Modal -->
+    <div class="modal fade" id="testmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">View Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <input type="text" class="form-control" id="i1" readonly>
+                        <input type="text" class="form-control" id="o1" readonly>
+                        <div style="width: 100%; display: table;" class="mt-5">
+                            <div style="display: table-row">
+
+                                <div style="width: 1000px; display: table-cell;">
+                                    <h6 id="itemName"></h6>
+                                    <p id="itemPrice"></p>
+                                    <p id="itemQuantity"></p>
+                                </div>
+
+                                <div style="width: 1000px; display: table-cell;"> 
+                                    <h6 id="itemName2"></h6>
+                                    <p id="itemPrice2"></p>
+                                    <p id="itemQuantity2"></p> 
+                                </div>
+
+                                <div style="width: 1000px; display: table-cell;"> 
+                                    <h6 id="itemName3"></h6>
+                                    <p id="itemPrice3"></p>
+                                    <p id="itemQuantity3"></p>   
+                                </div>
+
+                                <div style="width: 1000px; display: table-cell;"> 
+                                    <h6 id="itemName4"></h6>
+                                    <p id="itemPrice4"></p>
+                                    <p id="itemQuantity4"></p>                   
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>       
+
+    <div class="container pt-5 flex-row-reverse">
+        <!--New Button-->
+        <button class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            New Order &nbsp
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+        <br><br>
+
+        <!--Table-->
+        <table class="table table-hover" id="tbodyy">
+            <thead class="table-secondary">
+                <th scope="col">#</th>
+                <th scope="col">Order #</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Total</th>
+                <th scope="col">Actions</th>
+            </thead>
+            <tbody id="tlists"> 
+            </tbody>
+        </table>
+
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New Order</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-group col-3">
+                                <input type="text" class="form-control" id="ORNum" placeholder="OR Number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-5">
+                                <input type="text" class="form-control" id="custName" placeholder="Customer Name">
+                            </div>
+                        </div>
+
+                        <!--FIRST ROW-->
+                        <div class="row">
+                            <div class="form-group col-3">     
+                                <label for="itemOne">Item</label>                     
+                                <select class="form-control" id="itemOne"> 
+                                    <option placeholder="Item"></option>                             
+                                </select>
+                            </div>
+                            <div class="form-group col-3">     
+                                <label for="price1">Price</label>
+                                <input type="number" class="form-control" id="price1" placeholder="Price" onkeyup="calculate1()" onclick="calculate1()" value="0.00">
+                            </div>       
+                            <div class="form-group col-3">
+                                <label for="Quantity">Quantity</label>
+                                <input type="number" class="form-control" id="quantity1" placeholder="Quantity" onkeyup="calculate1()" onclick="calculate1()" value="1">
+                            </div>    
+                            <div class="form-group col-3">
+                                <label for="subtotal1">Subtotal</label>
+                                <input type="text" class="form-control" id="subtotal1" placeholder="Subtotal"  value="0" readonly>
+                            </div>   
+                        </div>
+
+                        <!--SECOND ROW-->
+                        <div class="row">
+                            <div class="form-group col-3">   
+                                <select class="form-control" id="itemTwo">
+                                    <option></option>        
+                                </select>
+                        
+                            </div>
+                            <div class="form-group col-3">       
+                                <input type="number" class="form-control" id="price2" placeholder="Price" onkeyup="calculate2()" onclick="calculate2()" value="0.00">
+                            </div>       
+                            <div class="form-group col-3">     
+                                <input type="number" class="form-control" id="quantity2" placeholder="Quantity" onkeyup="calculate2()" onclick="calculate2()" value="1">
+                            </div>    
+                            <div class="form-group col-3">     
+                                <input type="text" class="form-control" id="subtotal2" placeholder="Subtotal" value="0" readonly>
+                            </div>   
+                        </div>
+
+                        <!--THIRD ROW-->
+                        <div class="row">
+                            <div class="form-group col-3">
+                                <select class="form-control" id="itemThree">
+                                    <option></option>  
+                                </select>
+                            </div>
+                            <div class="form-group col-3">    
+                                <input type="number" class="form-control" id="price3" placeholder="Price" onkeyup="calculate3()" onclick="calculate3()" value="0.00">
+                            </div>       
+                            <div class="form-group col-3">     
+                                <input type="number" class="form-control" id="quantity3" placeholder="Quantity" onkeyup="calculate3()" onclick="calculate3()"value="1">
+                            </div>    
+                            <div class="form-group col-3">        
+                                <input type="text" class="form-control" id="subtotal3" placeholder="Subtotal" value="0" readonly>
+                            </div>   
+                        </div>
+
+                        <!--FOURTH ROW-->
+                        <div class="row">
+                            <div class="form-group col-3">
+                                <select class="form-control" id="itemFour"> 
+                                    <option></option>                 
+                                </select>
+                            </div>
+                            <div class="form-group col-3">           
+                                <input type="number" class="form-control" id="price4" placeholder="Price" onkeyup="calculate4()" onclick="calculate4()" value="0.00">
+                            </div>       
+                            <div class="form-group col-3">
+                                <input type="number" class="form-control" id="quantity4" placeholder="Quantity" onkeyup="calculate4()" onclick="calculate4()" value="1">
+                            </div>    
+                            <div class="form-group col-3">
+                                <input type="text" class="form-control" id="subtotal4" placeholder="Subtotal"   value="0"readonly>
+                            </div>   
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="save()" data-bs-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Script-->
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadTable();
+        });
+
+        let foods = [];
+        let foodimg = [];
+
+        const request = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese';
+        const getData = async () =>{
+            const response = await fetch(request);
+            const jsondata = response.json();
+            return jsondata;
+        }
+        getData().then((value) => {
+                let arrfoods = value.meals;
+                for (food of arrfoods) {
+                    foods.push(food.strMeal);
+                    foodimg.push(food.strMealThumb);   
+                }
+                populateItem1();
+                populateItem2();
+                populateItem3();
+                populateItem4();
+        }).catch((err) => {
+            console.log("ERROR");
+        });
+
+        function populateItem1() {
+            for (food of foods) {
+                let option = document.createElement("option");
+                    option.value = food;
+                    option.innerHTML = food;
+                    itemOne.appendChild(option);
+            }
+        }
+     
+        function populateItem2() {
+            for (food of foods) {
+                let option = document.createElement("option");
+                    option.value = food;
+                    option.innerHTML = food;
+                    itemTwo.appendChild(option);
+            }
+        }
+        function populateItem3() {
+            for (food of foods) {
+                let option = document.createElement("option");
+                    option.value = food;
+                    option.innerHTML = food;
+                    itemThree.appendChild(option);
+            }
+        }
+        function populateItem4() {
+            for (food of foods) {
+                let option = document.createElement("option");
+                    option.value = food;
+                    option.innerHTML = food;
+                    itemFour.appendChild(option);
+            }
+        }
+
+        function calculate1() {
+            var price = (parseFloat(document.getElementById("price1").value)).toFixed(2);
+            var quantity = parseFloat(document.getElementById("quantity1").value);
+            var subtotal = parseFloat(document.getElementById("subtotal1").value = price * quantity).toFixed(2); 
+        }
+
+        function calculate2() {
+            var price = (parseFloat(document.getElementById("price2").value)).toFixed(2);
+            var quantity = parseFloat(document.getElementById("quantity2").value);
+            var subtotal = parseFloat(document.getElementById("subtotal2").value = price * quantity).toFixed(2);        
+        }
+
+        function calculate3() {
+            var price = (parseFloat(document.getElementById("price3").value)).toFixed(2);
+            var quantity = parseFloat(document.getElementById("quantity3").value);
+            var subtotal = parseFloat(document.getElementById("subtotal3").value = price * quantity).toFixed(2);   
+        }
+
+        function calculate4() {
+            var price = (parseFloat(document.getElementById("price4").value)).toFixed(2);
+            var quantity = parseFloat(document.getElementById("quantity4").value);
+            var subtotal = parseFloat(document.getElementById("subtotal4").value = price * quantity).toFixed(2); 
+        }
+
+        function save() {
+            var orderNum = document.getElementById("ORNum").value;
+            var name = document.getElementById("custName").value;
+
+            var item1 = document.getElementById("itemOne").value;
+            var item2 = document.getElementById("itemTwo").value;
+            var item3 = document.getElementById("itemThree").value;
+            var item4 = document.getElementById("itemFour").value;
+
+            var price1 = document.getElementById("price1").value;
+            var price2 = document.getElementById("price2").value;
+            var price3 = document.getElementById("price3").value;
+            var price4 = document.getElementById("price4").value;
+
+            var quantity1 = document.getElementById("quantity1").value;
+            var quantity2 = document.getElementById("quantity2").value; 
+            var quantity3 = document.getElementById("quantity3").value;
+            var quantity4 = document.getElementById("quantity4").value;
+
+            var subtotal1 = parseFloat(document.getElementById("subtotal1").value);
+            var subtotal2 = parseFloat(document.getElementById("subtotal2").value);
+            var subtotal3 = parseFloat(document.getElementById("subtotal3").value);
+            var subtotal4 = parseFloat(document.getElementById("subtotal4").value);
+
+            var totalAmount = subtotal1 + subtotal2 + subtotal3 + subtotal4;
+            var numberString = totalAmount.toString();
+
+            var dataobject = {
+                OrderNumber: orderNum,
+                Name: name,
+                ItemOne: item1,
+                ItemTwo: item2,
+                ItemThree: item3,
+                ItemFour: item4,
+                Total: numberString
+            };
+
+            var convert_to_json = JSON.stringify(dataobject);
+            var myStorage = window.localStorage;
+            var obj_list = myStorage.getItem("customer_list");
+
+            if(obj_list == null) {
+                var obj_array = {
+                    customer_list:[
+                        {
+                            orderNum: orderNum,
+                            name: name,
+                            item_list:[
+                                {
+                                    FirstItem: [
+                                        {
+                                            ItemOne: item1,
+                                            Price: price1,
+                                            Quantity: quantity1
+                                        }
+                                    ],
+                                    SecondItem: [
+                                        {
+                                            ItemTwo: item2,
+                                            Price: price2,
+                                            Quantity: quantity2
+                                        }
+                                    ],
+                                    ThirdItem: [
+                                        {
+                                            ItemThree: item3,
+                                            Price: price3,
+                                            Quantity: quantity3
+                                        }
+                                    ],
+                                    FourthItem: [
+                                        {
+                                            ItemFour: item4,
+                                            Price: price4,
+                                            Quantity: quantity4
+                                        }
+                                    ]
+                                }
+                            ],
+                            Total: numberString
+                        }
+                    ]
+                }
+
+                var convertJSON = JSON.stringify(obj_array);
+                myStorage.setItem("customer_list", convertJSON)
+                
+            } else {
+                var objectarray = JSON.parse(obj_list);
+
+                objectarray["customer_list"].push({
+                    orderNum: orderNum,
+                    name: name,
+                    item_list:[
+                        {
+                            FirstItem: [
+                                {
+                                    ItemOne: item1,
+                                    Price: price1,
+                                    Quantity: quantity1
+                                }
+                            ],
+                            SecondItem: [
+                                {
+                                    ItemTwo: item2,
+                                    Price: price2,
+                                    Quantity: quantity2
+                                }
+                            ],
+                            ThirdItem: [
+                                {
+                                    ItemThree: item3,
+                                    Price: price3,
+                                    Quantity: quantity3
+                                }
+                            ],
+                            FourthItem: [
+                                {
+                                    ItemFour: item4,
+                                    Price: price4,
+                                    Quantity: quantity4
+                                }
+                            ]
+                        }
+                    ],
+
+                    Total: numberString
+
+                });
+
+                var convertJSON = JSON.stringify(objectarray);
+
+                myStorage.setItem("customer_list", convertJSON);
+                console.log("existing");
+            }
+            location.reload();
+        }
+
+        function loadTable() {
+
+            var myStorage = window.localStorage;
+            var obj_list = myStorage.getItem("customer_list");
+         
+            if (obj_list != null) {
+                var objectarray = JSON.parse(obj_list);
+                var table = document.getElementById('tlists');
+            
+                for (index = 0; index < objectarray["customer_list"].length; index++) {   
+
+                    var row = table.insertRow(table.rows.length);
+                    var col0 = row.insertCell(0);
+                    var col1 = row.insertCell(1);
+                    var col2 = row.insertCell(2);
+                    var col3 = row.insertCell(3);
+                    var col4 = row.insertCell(4);
+               
+                    col0.innerHTML = index + 1;
+                    if (objectarray["customer_list"][index].orderNum == 0)
+                        col1.innerHTML = "<p style='color: rgb(139, 25, 150)'><i>Not Specified</i></p>"
+                    else
+                        col1.innerHTML = objectarray["customer_list"][index].orderNum;  
+
+                    if (objectarray["customer_list"][index].name == 0)
+                        col2.innerHTML = "<p style='color: rgb(139, 25, 150)'><i>Not Specified</i></p>"     
+                    else 
+                        col2.innerHTML = objectarray["customer_list"][index].name;
+
+                    var totalAmountFormat = new Intl.NumberFormat('zh-cn', { style: 'currency', currency: 'CNY' }).format(objectarray["customer_list"][index].Total);
+                    col3.innerHTML = totalAmountFormat;
+                    col4.innerHTML = "<button class='btn btn-outline-primary' data-bs-toggle='modal' data-bs-target='#testmodal' id='button"+index+"'>View</button";          
+                }
+
+                for (let i=0; i < objectarray["customer_list"].length; i++) {
+                    var c = document.getElementById("button"+i);
+                    c.onclick = function() {
+
+                        // Name and Order Number
+                        if (objectarray["customer_list"][i].name == 0)
+                            i1.value = "Not Specified"
+                        else
+                            i1.value = objectarray["customer_list"][i].name;
+
+                        if (objectarray["customer_list"][i].orderNum == 0)
+                            o1.value = "Not Specified"
+                        else
+                            o1.value = objectarray["customer_list"][i].orderNum;
+
+                        // Item 1
+                        if (objectarray["customer_list"][i]["item_list"][0]["FirstItem"][0]["ItemOne"] == 0) {
+                            itemName.innerHTML = "NO ITEM";
+                            itemPrice.innerHTML = "";
+                            itemQuantity.innerHTML = "";
+                        } else {
+                            itemName.innerHTML = "<b>" + objectarray["customer_list"][i]["item_list"][0]["FirstItem"][0]["ItemOne"] + "</b>";
+                            var itemPriceFormat = new Intl.NumberFormat('zh-cn', { style: 'currency', currency: 'CNY' }).format(objectarray["customer_list"][i]["item_list"][0]["FirstItem"][0]["Price"]);
+                            itemPrice.innerHTML = itemPriceFormat;
+                            itemQuantity.innerHTML = "Quantity: " + objectarray["customer_list"][i]["item_list"][0]["FirstItem"][0]["Quantity"];
+                        }
+
+                        // Item 2
+                        if (objectarray["customer_list"][i]["item_list"][0]["SecondItem"][0]["ItemTwo"] == 0) {
+                            itemName2.innerHTML = "NO ITEM";
+                            itemPrice2.innerHTML = "";
+                            itemQuantity2.innerHTML = "";
+                        } else {
+                            itemName2.innerHTML = "<b>" + objectarray["customer_list"][i]["item_list"][0]["SecondItem"][0]["ItemTwo"] + "<b>";
+                            var itemPriceFormat2 = new Intl.NumberFormat('zh-cn', { style: 'currency', currency: 'CNY' }).format(objectarray["customer_list"][i]["item_list"][0]["SecondItem"][0]["Price"]);
+                            itemPrice2.innerHTML = itemPriceFormat2;
+                            itemQuantity2.innerHTML = "Quantity: " + objectarray["customer_list"][i]["item_list"][0]["SecondItem"][0]["Quantity"];
+                        }
+
+                        // Item 3
+                        if (objectarray["customer_list"][i]["item_list"][0]["ThirdItem"][0]["ItemThree"] == 0) {
+                            itemName3.innerHTML = "NO ITEM";
+                            itemPrice3.innerHTML = "";
+                            itemQuantity3.innerHTML = "";
+                        } else {
+                            itemName3.innerHTML = "<b>" + objectarray["customer_list"][i]["item_list"][0]["ThirdItem"][0]["ItemThree"] + "<b>";
+                            var itemPriceFormat3 = new Intl.NumberFormat('zh-cn', { style: 'currency', currency: 'CNY' }).format(objectarray["customer_list"][i]["item_list"][0]["ThirdItem"][0]["Price"]);
+                            itemPrice3.innerHTML = itemPriceFormat3;
+                            itemQuantity3.innerHTML = "Quantity: " + objectarray["customer_list"][i]["item_list"][0]["ThirdItem"][0]["Quantity"];
+                        }
+
+                        // Item 4
+                        if (objectarray["customer_list"][i]["item_list"][0]["FourthItem"][0]["ItemFour"] == 0) {
+                            itemName4.innerHTML = "NO ITEM";
+                            itemPrice4.innerHTML = "";
+                            itemQuantity4.innerHTML = "";
+                        } else {
+                            itemName4.innerHTML = "<b>" + objectarray["customer_list"][i]["item_list"][0]["FourthItem"][0]["ItemFour"] + "<b>";
+                            var itemPriceFormat4 = new Intl.NumberFormat('zh-cn', { style: 'currency', currency: 'CNY' }).format(objectarray["customer_list"][i]["item_list"][0]["FourthItem"][0]["Price"]);
+                            itemPrice4.innerHTML = itemPriceFormat4;
+                            itemQuantity4.innerHTML = "Quantity: " + objectarray["customer_list"][i]["item_list"][0]["FourthItem"][0]["Quantity"];
+                        }
+                    }
+                }
+            }
+        }  
+    </script>
+</body>
+</html>
